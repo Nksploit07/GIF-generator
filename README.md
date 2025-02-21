@@ -11,7 +11,7 @@ A simple GIF search app using **AWS Lambda** and **Giphy API**.
 ```
 /gif-search-app
   ├── backend/        # AWS Lambda function
-  │   ├── index.js   # Lambda code
+  │   ├── app.js   # Lambda code
   ├── frontend/       # Frontend files
   │   ├── index.html  # HTML
   │   ├── styles.css  # CSS
@@ -48,7 +48,7 @@ const API_KEY = "YOUR_API_KEY";
 ### 4. Deploy AWS Lambda
 1. Go to **AWS Lambda** → Create Function
 2. Set **Name:** `gif-generator`, **Runtime:** `Node.js 22`
-3. Copy `backend/index.js` code and paste into Lambda
+3. Copy `backend/app.js` code and paste into Lambda
 4. Click **Deploy**
 
 ### 5. Setup API Gateway
